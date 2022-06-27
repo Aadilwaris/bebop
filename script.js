@@ -41,10 +41,10 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach(function(ele
     audioElement.currentTime = 0;
     audioElement.play();
     gif.style.opacity = 1;
-    // playButton.classList.remove('fa-play-circle');
-    // playButton.classList.add('fa-pause-circle');
-    playButton.classList.remove("fa-heart");
-    playButton.classList.add("fa-heart-pulse");
+    playButton.classList.remove('fa-play-circle');
+    playButton.classList.add('fa-pause-circle');
+    //playButton.classList.remove("fa-heart");
+    //playButton.classList.add("fa-heart-pulse");
   });
 })
 
@@ -60,10 +60,10 @@ document.getElementById('next').addEventListener('click',()=>{
   audioElement.currentTime = 0;
   audioElement.play();
   gif.style.opacity = 1;
-  // playButton.classList.remove('fa-play-circle');
-  // playButton.classList.add('fa-pause-circle');
-  playButton.classList.remove("fa-heart");
-  playButton.classList.add("fa-heart-pulse");
+  playButton.classList.remove('fa-play-circle');
+  playButton.classList.add('fa-pause-circle');
+  //playButton.classList.remove("fa-heart");
+  //playButton.classList.add("fa-heart-pulse");
 })
 
 document.getElementById('previous').addEventListener('click',()=>{
@@ -78,35 +78,35 @@ document.getElementById('previous').addEventListener('click',()=>{
   audioElement.currentTime = 0;
   audioElement.play();
   gif.style.opacity = 1;
-  // playButton.classList.remove('fa-play-circle');
-  // playButton.classList.add('fa-pause-circle');
-  playButton.classList.remove("fa-heart");
-  playButton.classList.add("fa-heart-pulse");
+  playButton.classList.remove('fa-play-circle');
+  playButton.classList.add('fa-pause-circle');
+  //playButton.classList.remove("fa-heart");
+  //playButton.classList.add("fa-heart-pulse");
 })
 
 function playPause(){
   if(audioElement.paused || audioElement.currentTime<=0){
     audioElement.play();
     navSong.innerText = songs[songIndex].songName;
-    // playButton.classList.remove("fa-play-circle");
-    // playButton.classList.add("fa-pause-circle");
-    playButton.classList.remove("fa-heart");
-    playButton.classList.add("fa-heart-pulse");
+    playButton.classList.remove("fa-play-circle");
+    playButton.classList.add("fa-pause-circle");
+//     playButton.classList.remove("fa-heart");
+//     playButton.classList.add("fa-heart-pulse");
     gif.style.opacity = 1;
   }else if(timeUpdate==100){
-    // playButton.classList.remove("fa-pause-circle");
-    // playButton.classList.add("fa-play-circle");
-    playButton.classList.remove("fa-heart-pulse");
-    playButton.classList.add("fa-heart");
+    playButton.classList.remove("fa-pause-circle");
+    playButton.classList.add("fa-play-circle");
+//     playButton.classList.remove("fa-heart-pulse");
+//     playButton.classList.add("fa-heart");
     gif.style.opacity = 0;
   }
   else {
     audioElement.pause();
     makeAllPlays();
-    // playButton.classList.remove("fa-pause-circle");
-    // playButton.classList.add("fa-play-circle");
-    playButton.classList.remove("fa-heart-pulse");
-    playButton.classList.add("fa-heart");
+    playButton.classList.remove("fa-pause-circle");
+    playButton.classList.add("fa-play-circle");
+//     playButton.classList.remove("fa-heart-pulse");
+//     playButton.classList.add("fa-heart");
     gif.style.opacity = 0;
   }
 }
