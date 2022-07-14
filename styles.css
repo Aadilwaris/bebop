@@ -201,13 +201,13 @@ h1{
   cursor: pointer;
 }
 
-#play-button{
+/* #play-button{
   color: #e73827;
-}
+} */
 
-#play-button:hover{
+/* #play-button:hover{
   color: #f85032;
-}
+} */
 
 #navSong{
   color: #fff;
