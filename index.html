@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bebop - Personal Music Player</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato&family=Montserrat:wght@400;500;600;900&family=Ubuntu:ital,wght@0,400;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="logo"><img src="images/logo.png" alt="bebop-logo">Bebop</li>
+        <li><a class="home" href="index.html">Home</a></li>
+        <li class="home">About</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="songList">
+        <h1>Romantics of all time &#10084;&#65039;</h1>
+        <div class="songsAll">
+          <div class="songItem">
+            <img src="images/teresang.jpg"><span class="songTitle">Mehbooba</span>
+            <span class="songListPlay"><span class="timeStamp">03:38</span></span>
+            <span><i id="0" class="songItemPlay fa-solid fa-play-circle smallPlay"></i></span>
+          </div>
+
+          <div class="songItem">
+            <img src="images/teresang.jpg"><span class="songTitle">Tu hai wohi</span>
+            <span class="songListPlay"><span class="timeStamp">03:38</span></span>
+            <span><i id="1" class="songItemPlay fa-solid fa-play-circle smallPlay"></i></span>
+          </div>
+
+          <div class="songItem">
+            <img src="images/teresang.jpg"><span class="songTitle">Aap ki nazron ne</span>
+            <span class="songListPlay"><span class="timeStamp">03:38</span></span>
+            <span><i id="2" class="songItemPlay fa-solid fa-play-circle smallPlay"></i></span>
+          </div>
+
+          <div class="songItem">
+            <img src="images/teresang.jpg"><span class="songTitle">Perfect</span>
+            <span class="songListPlay"><span class="timeStamp">03:38</span></span>
+            <span><i id="3" class="songItemPlay fa-solid fa-play-circle smallPlay"></i></span>
+          </div>
+
+          <div class="songItem">
+            <img src="images/teresang.jpg"><span class="songTitle">Tera woh pyaar</span>
+            <span class="songListPlay"><span class="timeStamp">03:38</span></span>
+            <span><i id="4" class="songItemPlay fa-solid fa-play-circle smallPlay"></i></span>
+          </div>
+
+          <div class="songItem">
+            <img src="images/teresang.jpg"><span class="songTitle">Chand si mehbooba</span>
+            <span class="songListPlay"><span class="timeStamp">03:38</span></span>
+            <span><i id="5" class="songItemPlay fa-solid fa-play-circle smallPlay"></i></span>
+          </div>
+
+          <div class="songItem">
+            <img src="images/teresang.jpg"><span class="songTitle">Tum Ho</span>
+            <span class="songListPlay"><span class="timeStamp">03:38</span></span>
+            <span><i id="6" class="songItemPlay fa-solid fa-play-circle smallPlay"></i></span>
+          </div>
+
+          <div class="songItem">
+            <img src="images/teresang.jpg"><span class="songTitle">Can't help falling in love</span>
+            <span class="songListPlay"><span class="timeStamp">03:38</span></span>
+            <span><i id="7" class="songItemPlay fa-solid fa-play-circle smallPlay"></i></span>
+          </div>
+
+          <div class="songItem">
+            <img src="images/teresang.jpg"><span class="songTitle">Sagar jaisi ankhon wali</span>
+            <span class="songListPlay"><span class="timeStamp">03:38</span></span>
+            <span><i id="8" class="songItemPlay fa-solid fa-play-circle smallPlay"></i></span>
+          </div>
+
+          <div class="songItem">
+            <img src="images/teresang.jpg"><span class="songTitle">Afreen Afreen</span>
+            <span class="songListPlay"><span class="timeStamp">03:38</span></span>
+            <span><i id="9" class="songItemPlay fa-solid fa-play-circle smallPlay"></i></span>
+          </div>
+
+       </div>
+      </div>
+      <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+      <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+      <div class="icons">
+        <i id = "previous" class="a fa-solid back fa-2x fa-angles-left"></i>
+        <i class="a fa-solid fa-2x fa-play-circle" id="play-button"></i>
+        <!-- <i class="a fa-solid fa-2x fa-heart" id="play-button"></i> -->
+        <i id = "next" class="a fa-solid forward fa-2x fa-angles-right"></i>
+      </div>
+      <div class="songInfo">
+        <img id="gif" src="images/playing.gif" width="42px" alt=""><span id=navSong>
+          Bebop - Play your songs
+        </span>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/941bad9439.js" crossorigin="anonymous"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
